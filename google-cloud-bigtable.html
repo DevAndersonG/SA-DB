@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google Cloud Bigtable</title>
+</head>
+
+<body>
+    <h1>
+        Google Cloud Bigtable
+    </h1>
+    <h2>
+        <a href="index.html">Home</a>
+    </h2>
+    <h2>
+        <em>
+            O que é o Google Cloud Bigtable?
+        </em>
+    </h2>
+    <p class="texto-justificado">
+        Google Cloud Bigtable é uma versão gerenciada e escalável do
+        sistema de banco de dados NoSQL, criado pelo Google. Ele é projetado para
+        lidar com grandes volumes de dados, pode ser escalonada para bilhões de
+        linhas e milhares de colunas, o que permite armazenar terabytes, ou até
+        mesmo petabytes, de dados distribuídos e de baixa latência, sendo uma
+        solução ideal para aplicativos que exigem alta capacidade de leitura e
+        gravação, além de grande escalabilidade.
+
+    </p>
+    <h2>
+        <strong>Como funciona o Google Cloud Bigtable?</strong>
+    </h2>
+    <p class="texto-justificado">
+        Tabelas: O Bigtable armazena dados em tabelas altamente escaláveis.
+        Cada tabela é um mapa chave-valor ordenado.
+        Linhas: Cada linha é identificada por uma chave de linha única.
+        Colunas: As colunas estão agrupadas em famílias de colunas. Cada
+        família de colunas pode conter múltiplos qualificadores de coluna.
+        Células: Cada interseção de linha e coluna contém uma célula de
+        dados, com um valor associado e um carimbo de data/hora
+        (timestamp).
+        Armazenamento Distribuído
+        Distribuição de Dados: O Bigtable distribui dados por vários nós em um
+        cluster para garantir que os dados sejam armazenados de forma eficiente e
+        acessados rapidamente.
+        Shard: O Bigtable particiona os dados internamente em shards para
+        distribuí-los de forma balanceada e escalável.
+        Replicação: O Bigtable oferece replicação automática dos dados para
+        garantir alta disponibilidade e durabilidade. Quando você cria uma instância
+        do Bigtable, pode configurar a replicação dos dados em várias regiões para
+        maior confiabilidade.
+        Consistência e Durabilidade
+        Consistência Eventual: O Bigtable garante consistência eventual de
+        dados, ou seja, pode haver um pequeno atraso antes que as
+        atualizações sejam propagadas para todas as réplicas.
+    </p>
+    <h2>
+        <strong>Vantagens</strong>
+    </h2>
+    <p class="texto-justificado">
+        Alta Escalabilidade
+        Capacidade de escalar horizontalmente de forma automática para lidar
+        com grandes volumes de dados sem afetar o desempenho.
+        Permite o aumento de capacidade de processamento ao adicionar
+        mais nós ao cluster.
+        Baixa Latência
+        Oferece alta performance em leituras e gravações, com baixa latência,
+        o que é ideal para aplicativos em tempo real.
+        Gestão Automatizada
+        A administração e o balanceamento de carga são feitos
+        automaticamente, reduzindo a necessidade de gerenciamento manual.
+        A replicação e durabilidade são configuradas automaticamente,
+        garantindo alta disponibilidade dos dados.
+        Armazenamento Flexível
+        Permite o armazenamento de dados em tabelas distribuídas, com
+        suporte a múltiplas versões de células e dados com carimbos de
+        data/hora.
+        Ideal para dados de grandes volumes de dados de chave-valor.
+    </p>
+    <h2>Desvantagens</h2>
+    <p class="texto-justificado">
+        Consistência Eventual
+        O Bigtable usa consistência eventual em vez de consistência forte, o
+        que pode causar atrasos na propagação de atualizações entre réplicas.
+        Limitação de Modelo de Dados Embora seja flexível,
+        o Bigtable é otimizado para dados de chave-valor
+        e séries temporais, o que pode não ser adequado para consultas
+        complexas ou modelos de dados relacionais.
+        Falta de Suporte a SQL Completo
+        Não oferece suporte nativo para SQL completo ou joins, o que pode
+        ser uma limitação para quem precisa realizar operações de banco de
+        dados complexos.
+        O custo pode aumentar rapidamente com o crescimento dos dados e a
+        escala do cluster, especialmente se não houver um controle rigoroso
+        sobre os recursos alocados.
+    </p>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/3_BCvIgpqb0"
+        title="Afinal, o que é o Google Cloud? | PT-BR" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+</html>

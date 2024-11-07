@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Firebird</title>
+</head>
+
+<body>
+    <h1>Firebird</h1>
+    <h2>
+        <a href="index.html">Home</a>
+    </h2>
+    <h2>
+        <em>
+            O que é o Firebird?
+        </em>
+    </h2>
+    <p class="texto-justificado">
+        O Firebird é um sistema de gerenciamento de banco de dados
+        (SGBD) relacional de código aberto e gratuito, compatível com o padrão SQL-
+        92 (uma atualização do SQL-89). Ele foi desenvolvido a partir do código-fonte
+        do InterBase 6, um sistema de banco de dados originalmente proprietário,
+        criado pela Borland.
+
+    </p>
+    <h2>
+        <strong>Como funciona o Firebird?</strong>
+    </h2>
+    <p class="texto-justificado">
+        Servidor Firebird: A parte central do Firebird, que gerencia e manipula
+        os dados armazenados no banco. Ele é responsável pela execução de
+        consultas SQL, transações e outras operações no banco de dados.
+        Cliente: O aplicativo que se comunica com o servidor para acessar ou
+        manipular dados. Pode ser qualquer tipo de aplicação que utilize o
+        driver ODBC ou API nativa do Firebird.
+        O servidor executa a consulta SQL de acordo com o plano de
+        execução gerado. A consulta pode envolver operações como seleção,
+        inserção, atualização ou exclusão de dados.
+        Durante a execução, o servidor utiliza o modelo de controle de
+        concorrência multiversionado (MVCC) para garantir que múltiplas
+        transações possam acessar os dados simultaneamente sem conflitos.O cliente envia uma
+        solicitação de consulta SQL para o servidor.
+        O servidor analisa a consulta SQL e cria um plano de execução, que é
+        uma estratégia para executar a consulta de forma eficiente.
+        O Firebird usa transações para garantir a integridade dos dados. Uma transação é
+        um conjunto de operações que são executadas como uma unidade, sendo
+        atômicas (ou seja, ou todas as operações são feitas, ou nenhuma).
+        O modelo de versões (versioning) permite que o Firebird tenha múltiplas versões
+        dos dados, possibilitando que transações concorrentes possam ler dados sem
+        bloquear umas às outras.
+    </p>
+
+    <h2>
+        <strong>Vantagens</strong>
+    </h2>
+    <p class="texto-justificado">
+        O Firebird é totalmente open-source, sem restrições para uso em
+        projetos comerciais. Isso torna o banco de dados acessível e atraente
+        para empresas de qualquer porte, sem a necessidade de pagar por
+        licenças.
+        Possui uma versão embutida que é extremamente compacta (menos
+        de 1MB) e pode ser instalada como uma única DLL, além de rodar em
+        diversos sistemas operacionais como Windows, Linux, Mac OS entre
+        outros.
+        Alta Conformidade com SQL-92 e ACID
+        O Firebird é altamente compatível com o padrão SQL-92 e garante
+        propriedades ACID (Atomicidade, Consistência, Isolamento e
+        Durabilidade), o que o torna confiável para aplicações críticas.
+        Fácil Backup e Recuperação
+        O Firebird permite backups online e restauração sem a necessidade
+        de interromper o serviço, o que facilita a administração do banco de
+        dados em ambientes de produção com alta disponibilidade.
+
+    </p>
+    <h2>Desvantagens</h2>
+    <p class="texto-justificado">
+        Menor Popularidade e Comunidade Menor
+        Apesar de ter uma comunidade dedicada, o Firebird não tem a mesma
+        popularidade de outros bancos como MySQL ou PostgreSQL, o que
+        pode dificultar o suporte e encontrar profissionais experientes.
+        A documentação do Firebird, especialmente para iniciantes, é
+        desorganizada e carece de tutoriais e exemplos claros, o que pode
+        desmotivar novos usuários que tentam aprender a usar o banco de
+        dados.
+        Integração com Ferramentas Menos Abrangente
+        Existem menos ferramentas gráficas e integrações com IDEs
+        populares em comparação com outros SGBDs, o que pode dificultar a
+        experiência do desenvolvedor e a adoção em grandes projetos.
+        Falta de Suporte Corporativo de Peso
+        O Firebird não tem o respaldo de grandes empresas como a Oracle,
+        IBM ou Microsoft, o que limita sua adoção em grandes corporações
+        que geralmente preferem bancos com suporte comercial robusto.
+
+    </p>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/rTWE0UY-1Xk"
+        title="Um belo motivo para migrar para a versão 3.0 do Firebird" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+
+</html>

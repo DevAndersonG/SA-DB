@@ -1,0 +1,21 @@
+.texto-justificado {
+    text-align: justify;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+li {
+    text-align: justify;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(4, 124, 185);
+}
+
+body {
+    background-color: rgb(196, 204, 208);
+    text-align: center;
+}
