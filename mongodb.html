@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MongoDB</title>
+</head>
+
+<body>
+    <h1>
+        MongoDB
+    </h1>
+    <h2>
+        <a href="index.html">Home</a>
+    </h2>
+    <h2>
+        <em>
+            O que é MongoDB?
+        </em>
+    </h2>
+    <p class="texto-justificado">
+        MongoDB é um sistema de gerenciamento de banco de dados (DBMS) não relacional, baseado em software livre, que
+        utiliza documentos flexíveis em vez de tabelas e linhas para processar e armazenar várias formas de dados. Como
+        uma solução de banco de dados NoSQL, o MongoDB não requerer um sistema de gerenciamento de banco de dados
+        relacional (RDBMS), portanto, ele oferece um modelo de armazenamento de dados elástico, que permite aos usuários
+        armazenar e consultar tipos de dados variados com facilidade. Isso não apenas simplifica o gerenciamento do
+        banco de dados para os desenvolvedores, como também cria um ambiente altamente escalável para aplicativos e
+        serviços multiplataforma.
+
+    </p>
+    <h2>
+        <strong>Como funciona o MongoDB?</strong>
+    </h2>
+    <p class="texto-justificado">
+        No MongoDB, os dados são armazenados em documentos agrupados em coleções. Esses documentos, formatados como
+        BSON, permitem representações de dados hierárquicas e flexíveis, onde cada documento pode ter campos e tipos de
+        dados variados. O MongoDB utiliza um esquema dinâmico, o que significa que as estruturas dos documentos podem
+        variar dentro de uma mesma coleção, permitindo maior flexibilidade em relação à organização dos dados. Ele
+        também suporta sharding (fragmentação horizontal), o que distribui dados em múltiplos servidores para melhorar a
+        escalabilidade e o desempenho.
+
+    </p>
+    <h2>
+        <strong>Vantagens</strong>
+    </h2>
+    <p class="texto-justificado">
+        Balanceamento de carga: MongoDB usa fragmentação para distribuir grandes conjuntos de dados em várias máquinas,
+        mantendo o desempenho de leitura e gravação e evitando custos de escalabilidade vertical em ambientes de cloud.
+        Consultas ad hoc: Oferece consultas ad hoc que não exigem esquemas predefinidos e usa uma linguagem de consulta
+        similar ao SQL, facilitando o uso para desenvolvedores de diferentes níveis.
+        Suporte a múltiplas linguagens: MongoDB é compatível com diversas linguagens, como Python, PHP, JavaScript,
+        Ruby, Node.js, e outras, aumentando sua flexibilidade e alcance.
+
+    </p>
+    <h2>
+        <strong>Desvantagens</strong>
+    </h2>
+    <p class="texto-justificado">
+        Complexidade com Dados Altamente Relacionais: Para dados que requerem relacionamentos complexos, como transações
+        envolvendo várias entidades, o MongoDB pode não ser tão eficiente quanto um banco de dados relacional.
+        Altos Requisitos de Armazenamento: Devido ao formato BSON, o MongoDB pode consumir mais espaço de armazenamento
+        do que bancos de dados SQL tradicionais.
+        Desempenho em Operações de Gravação Intensa: MongoDB pode ter problemas de desempenho em cenários onde há muitas
+        operações de gravação simultâneas e pesadas, especialmente em ambientes com hardware limitado.
+
+    </p>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/4dTI1mVLX3I"
+        title="MongoDB (O Banco de Dados NoSQL mais Legal) // Dicionário do Programador" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+
+</html>
